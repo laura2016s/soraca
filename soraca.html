@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soracá - Historia y Cultura</title>
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        /* Encabezado */
+        
+       header {
+            position: relative; /* Necesario para posicionar el título */
+            overflow: hidden; /* Para ocultar el desbordamiento */
+            border-bottom: 5px solid #ff8bbd; /* Rosa más oscuro */
+            border-radius: 15px; /* Bordes redondeados en el encabezado */
+            }
+ header img {
+            width: 100%; /* Hace que la imagen ocupe todo el ancho */
+            border-radius: 15px; /* Bordes redondeados de la imagen */
+        }
+        header h1 {
+            position: absolute; /* Para superponer el título sobre la imagen */
+            top: 30%; /* Ajusta según sea necesario */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centra el título */
+            z-index: 2; /* Asegura que el título esté encima de la imagen */
+            color: #fff;
+            font-size: 3em; /* Tamaño de fuente más grande */
+            margin: 0;
+            animation: slideIn 1s ease-in-out; /* Animación de entrada */
+        }
+        /* Navegación */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color:#e2b1fe ; /* Color pastel morado */
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffffff ; /* Texto en azul celeste */
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #e4b7ff;
+        }
+        /* Espacio para el menú fijo */
+        .menu-space {
+            height: 60px;
+        }
+        /* Contenido */
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+            color: #333; /* Texto en negro */
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        section h2 {
+            color: #a8a3fe; /* Título en morado pastel */
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        }
+        section p {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* Imagen de fondo en las tarjetas */
+        .content section {
+            background-size: cover;
+            background-position: center;
+            color: #333; /* Texto en negro */
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        .mapa iframe {
+            width: 100%;
+            height: 250px;
+            border: 0;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+  
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> Soracá </h1>
+        
+     <img src="IMG/por.png"/>
+    </header>
+
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#escudo">Escudo y Bandera</a>
+        <a href="#himno">Himno</a>
+        <a href="#gastronomia">Gastronomía</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#florafauna">Flora y Fauna</a>
+        <a href="#sitios">Sitios Emblemáticos</a>
+        <a href="#mapa">Mapa y Ruta</a>
+        <a href="#cultura">Cultura</a>
+        <a href="#clima">Clima</a>
+        <a href="#productos">Productos</a>
+    </nav>
+    
+    <!-- Espacio para evitar que el contenido se superponga al menú fijo -->
+    <div class="menu-space"></div>
+
+    <div class="content">
+        <section id="historia">
+            <h2>Historia</h2>
+            <section id="historia-precolombina">
+                <h2>Historia Precolombina</h2>
+                <p>Soracá es un municipio de Colombia ubicado en el departamento de Boyacá, cerca de la ciudad de Tunja. Su historia se remonta a la época precolombina, cuando era habitado por los muiscas, una de las civilizaciones indígenas más importantes de Colombia. En el sistema político y religioso de los muiscas, Soracá desempeñaba un papel relevante, ya que era un punto estratégico en la región.</p>
+            </section>
+
+            <section id="epoca-conquista">
+                <h2>Época de la Conquista</h2>
+                <p>Durante la época de la conquista, Soracá fue escenario de interacciones complejas entre los indígenas muiscas y los colonizadores españoles. A medida que la colonización avanzaba, la población indígena se vio afectada profundamente. El sistema de encomiendas impuesto por los españoles cambió drásticamente la vida de los locales, y aunque los habitantes adoptaron nuevas costumbres, también mantuvieron aspectos de su herencia indígena en sus técnicas agrícolas y algunas de sus tradiciones culturales.</p>
+            </section>
+
+            <section id="consolidacion-colonial">
+                <h2>Consolidación Colonial</h2>
+                <p>En la época colonial, Soracá se fue consolidando como un lugar dedicado a la agricultura. Los cultivos de papa, maíz y otros productos típicos de la región andina eran la base de su economía, y la tradición agrícola de la zona se mantuvo a través de las generaciones.</p>
+            </section>
+
+            <section id="legado-agricola">
+                <h2>Legado Agrícola y Tradiciones Culturales</h2>
+                <p>Hoy en día, Soracá sigue siendo conocido por sus productos agrícolas y su entorno rural. Las festividades de la región celebran tanto la herencia cristiana como la indígena, reflejando la rica historia y mezcla cultural del municipio.</p>
+            </section>
+
+            <section id="actualidad">
+                <h2>Actualidad</h2>
+                <p>Soracá es un lugar lleno de historia y cultura que ofrece a sus visitantes tradiciones únicas, paisajes naturales espectaculares y vestigios de su pasado precolombino. Las festividades locales y la cálida acogida de sus habitantes hacen de este lugar un destino especial para quienes deseen conocer más sobre la historia y cultura de Boyacá.</p>
+            </section>
+        </section>
+
+        <section id="escudo y  bandera ">
+            <h2>Escudo</h2>
+         <p>El escudo de Soracá, Boyacá, es un emblema que simboliza la historia, cultura y tradiciones de este municipio colombiano. Sus elementos reflejan el pasado indígena y colonial, además de representar las riquezas naturales y los valores de la comunidad.</p>
+
+    <div class="section-title">Corona o Yelmo</div>
+    <p>Este símbolo representa la herencia y el linaje ancestral de Soracá, honrando a las civilizaciones indígenas, especialmente a los muiscas, quienes habitaron la región antes de la llegada de los españoles.</p>
+
+    <div class="section-title">Vegetación y Cultivos</div>
+    <p>La papa, el maíz y otros cultivos que suelen aparecer en el escudo representan la base agrícola de Soracá, que ha sido una de las actividades económicas más importantes del municipio desde tiempos coloniales.</p>
+
+    <div class="section-title">Colores</div>
+    <p>Los tonos verdes y dorados simbolizan la fertilidad de las tierras de Soracá, donde la agricultura ha prosperado durante generaciones. Estos colores también representan la riqueza natural del municipio, que incluye una diversidad de flora y fauna característica de la región andina.</p>
+
+    <div class="section-title">Elementos Religiosos y Patrimoniales</div>
+    <p>El escudo incluye símbolos relacionados con la religión católica y la historia colonial, representando el legado cultural que los colonizadores dejaron en la región. Esto se ve reflejado en el respeto hacia las tradiciones y festividades religiosas que aún se celebran en Soracá.</p>
+
+    <p>Este escudo es un homenaje a las raíces de Soracá, su naturaleza, su economía agrícola y su mezcla cultural, integrando así aspectos tanto indígenas como coloniales en una sola imagen representativa del municipio.</p>
+  <img src="IMG/Soraca.png"/>   
+
+<h2>bandera</h2>  
+<div class="flag">
+        
+    
+<div class="stripe green"></div>
+        
+      
+<div class="stripe white"></div>
+        
+       
+<div class="stripe red"></div>
+    
+    </div
+
+   
+</div>
+
+    
+
+   
+<p>La bandera de Soracá está compuesta por tres franjas horizontales</p>
+    
+    
+
+ 
+<ul>
+        
+      
+
+   
+<li><strong>Verde:</strong> Representa la riqueza natural y la fertilidad de sus tierras.</li>
+        
+       
+<li><strong>Blanco:</strong> Simboliza la paz y la tranquilidad de la comunidad soracana.</li>
+        
+       
+<li><strong>Rojo:</strong> Conmemora el esfuerzo, la fortaleza y el sacrificio de su gente.</li>
+    </ul>
+
+<img src="IMG/ba.jpg"/>
+
+ </section>
+
+        
+           
+    <section id="Himno">
+ <h2>Himno</h2>
+    <h2>Coro</h2>
+    <p>¡Oh, Soracá, tierra de amores,<br>
+       de luchas y esperanzas!<br>
+       En tus campos florecen sueños,<br>
+       nuestra voz siempre avanza.</p>
+
+    <h2>Estrofa 1</h2>
+    <p>En la brisa suena el canto,<br>
+       de tus hijos, fiel reflejo,<br>
+       de tradiciones que perduran,<br>
+       de un legado que es nuestro.</p>
+
+    <h2>Estrofa 2</h2>
+    <p>Tu gente laboriosa y unida,<br>
+       con amor siembra su vida,<br>
+       construyendo el porvenir,<br>
+       con esperanza y alegría.</p>
+
+    <h2>Estrofa 3</h2>
+    <p>De tus montes nace la fuerza,<br>
+       de tus ríos la pasión,<br>
+       Soracá, patria querida,<br>
+       en el alma tu canción.</p>
+
+    <h2>Coro</h2>
+    <p>¡Oh, Soracá, tierra de amores,<br>
+       de luchas y esperanzas!<br>
+       En tus campos florecen sueños,<br>
+       nuestra voz siempre avanza.</p>
+        </section>
+
+        <section id="gastronomia">
+        
+             <h2>Platos Típicos</h2>
+
+    <div class="dish">
+       <img src="IMG/are.jpg"/>
+        <p>Arepas: Un plato tradicional, muy versátil y consumido en diversas preparaciones.</p>
+    </div>
+
+    <div class="dish">
+        <img src="IMG/sancocho.webp"/>
+        <p>Sancocho: Una deliciosa sopa que combina diferentes carnes y tubérculos, ideal para compartir.</p>
+    </div>
+
+    <div class="dish">
+       <img src="IMG/lecho.jpg"/>
+        <p>Lechona: Cerdo asado relleno de arroz, una especialidad que no te puedes perder.</p>
+    </div>
+
+    <div class="dish">
+       <img src="IMG/natilla.jpg"/>
+        <p>Postres Típicos: Incluyen dulces como arequipe y natilla, ideales para el final de la comida.</p>
+    </div>
+
+    <h2>Recomendaciones</h2>
+    <p>Al visitar Soracá, asegúrate de probar estos platos en restaurantes locales para disfrutar de la auténtica gastronomía boyacense. ¡Buen provecho!</p>
+</div>
+        </section>
+
+        <section id="actividades">
+            <h2>Actividades</h2>
+
+
+    <h2>Actividades Destacadas</h2>
+     <h2>Recorrido Histórico por el Centro de Soracá</h2>
+        <p>Disfruta de un recorrido guiado por el centro histórico de Soracá, donde aprenderás sobre su cultura, arquitectura y tradiciones.</p>
+        <p class="price">Precio: $20,000 COP por persona</p>
+        <p>Incluye: Guía local, entrada a sitios históricos, y bebida tradicional.</p>
+    
+
+    
+        <h2>Caminata Ecológica al Mirador de Soracá</h2>
+        <p>Participa en una caminata ecológica hasta el Mirador de Soracá y disfruta de vistas panorámicas de la región andina.</p>
+        <p class="price">Precio: $30,000 COP por persona</p>
+        <p>Incluye: Guía ambiental, refrigerio y transporte de regreso al punto de partida.</p>
+  
+
+   
+        <h2>Visita a la Laguna La Tota</h2>
+        <p>Explora la Laguna La Tota, un lugar ideal para los amantes de la naturaleza. Aquí podrás observar la fauna local y disfrutar de un entorno natural único.</p>
+        <p class="price">Precio: $40,000 COP por persona</p>
+        <p>Incluye: Transporte, guía ecológico y almuerzo campestre.</p>
+  
+
+    
+        <h2>Taller de Artesanías Boyacenses</h2>
+        <p>Participa en un taller de artesanías donde aprenderás a hacer tejidos y cerámicas tradicionales. ¡Llévate a casa tus propias creaciones!</p>
+        <p class="price">Precio: $25,000 COP por persona</p>
+        <p>Incluye: Materiales, guía de artesano local y refrigerio.</p>
+    
+    
+        <h2>Tour Gastronómico</h2>
+        <p>Prueba los platos típicos de la región en un recorrido gastronómico que incluye la degustación de la arepa boyacense, cocido boyacense, y otras delicias locales.</p>
+        <p class="price">Precio: $35,000 COP por persona</p>
+        <p>Incluye: Degustación de varios platos, bebida y guía gastronómico.</p>
+        </section>
+
+        <section id="florafauna">
+            <h2>Flora y Fauna</h2>
+            <h2>Flora de Soracá</h2>
+        <p>En Soracá, la vegetación es diversa gracias a su clima y altitud. Aquí se encuentran varias especies nativas que forman parte esencial de su ecosistema.</p>
+        <ul>
+            <li><strong>Encino</strong>: Árbol de gran tamaño, típico de zonas frías.</li>
+            <li><strong>Frailejón</strong>: Planta que retiene agua y es característica de los páramos.</li>
+            <li><strong>Arrayán</strong>: Arbusto que crece en zonas montañosas y tiene usos medicinales.</li>
+        </ul>
+ 
+      <h2>Fauna de Soracá</h2>
+        <p>La fauna en Soracá incluye una variedad de especies adaptadas al clima andino y los ecosistemas de páramo y bosque.</p>
+        <ul>
+            <li><strong>Venado de cola blanca</strong>: Un mamífero que habita en áreas boscosas y páramos.</li>
+            <li><strong>Ardilla</strong>: Común en zonas de bosque, especialmente en áreas de encinos.</li>
+            <li><strong>Colibrí</strong>: Ave de tamaño pequeño que se alimenta de néctar y poliniza flores.</li>
+        </section>
+
+        <section id="sitios">
+            <h2>Sitios Emblemáticos</h2>
+         
+        <h2>Parroquia de San Jerónimo</h2>
+        <p>La iglesia principal del municipio es un lugar histórico y cultural en Soracá. Su arquitectura colonial y su historia la convierten en un sitio de interés tanto para locales como visitantes.</p>
+        
+  
+
+        <h2>Laguna La Tota</h2>
+        <p>Una laguna cercana rodeada de naturaleza, ideal para el ecoturismo y la observación de fauna y flora locales.</p>
+       
+  
+        <h2>El Mirador de Soracá</h2>
+        <p>Un sitio perfecto para disfrutar de una vista panorámica del municipio y los paisajes andinos de Boyacá. Desde aquí, se pueden apreciar las montañas y el verde de los campos.</p>
+      
+    
+    
+        <h2>Centro Histórico de Soracá</h2>
+        <p>Las calles del centro histórico mantienen un encanto colonial con casas de arquitectura típica boyacense. Este lugar permite conocer mejor la cultura y las tradiciones de Soracá.</p>
+       
+     <h3>Templo de San Joaquín</h3>
+            <p>Un templo histórico que data de la época colonial, conocido por su arquitectura y la importancia religiosa en la comunidad.</p>
+    
+
+        
+            <h3>Parque Central</h3>
+            <p>El Parque Central de Soracá es un punto de encuentro para los habitantes y visitantes, rodeado de vegetación y monumentos locales.</p>
+        </div>
+
+ 
+            <h3>Cascada La Cueva</h3>
+            <p>Un bello paraje natural donde los visitantes pueden disfrutar de la tranquilidad y del sonido del agua cayendo en la cascada.</p>
+        </div>
+
+       
+            <h3>Reserva Natural de Soracá</h3>
+            <p>Una reserva natural que protege la flora y fauna de la región y permite realizar caminatas y actividades ecoturísticas.</p>
+        </div>
+
+        
+            <h3>Mirador del Alto de los Ocobos</h3>
+            <p>Un mirador espectacular que ofrece una vista panorámica del municipio y de los paisajes montañosos que lo rodean.</p>
+        </div>
+        </section>
+
+        <section id="mapa" class="mapa">
+            <h2>Mapa y Ruta</h2>
+             <h2>Desde Bogotá</h2>
+        <p>La ruta desde Bogotá a Soracá es de aproximadamente 2 horas y media en automóvil:</p>
+        <ul>
+            <li>Toma la Autopista Norte hacia Tunja.</li>
+            <li>Continúa por la Ruta Nacional 55 hasta la entrada de Tunja.</li>
+            <li>Desde Tunja, sigue las señales hacia Soracá, que está a unos 10 kilómetros.</li>
+        </ul>
+ 
+
+    
+        <h2>Desde Tunja</h2>
+        <p>La distancia desde Tunja a Soracá es de solo 10 kilómetros. Puedes llegar en unos 15 minutos:</p>
+        <ul>
+            <li>Toma la vía Tunja-Soracá (Ruta Nacional 55).</li>
+            <li>Sigue las señales hacia Soracá.</li>
+        </ul>
+   
+        <h2>Transporte Público</h2>
+        <p>Si prefieres el transporte público, puedes tomar un bus intermunicipal desde Bogotá a Tunja. Desde Tunja, encontrarás transporte en colectivo hacia Soracá:</p>
+        <ul>
+            <li>En Bogotá, dirígete al Terminal de Transporte.</li>
+            <li>Toma un bus hacia Tunja.</li>
+            <li>Desde la terminal de Tunja, toma un colectivo o bus que vaya hacia Soracá.</li>
+        </ul>
+ <h2>mapa</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.083216234604!2d-74.0656!3d5.4991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2f67d7b1e8!2sSorac%C3%A1%2C+Boyac%C3%A1%2C+Colombia!5e0!3m2!1ses!2sco!4v1679503765651"></iframe>
+        </section>
+
+        <section id="cultura">
+            <h2>Cultura</h2>
+           
+ <h2>Fiestas Patronales de San Jerónimo</h2>
+        <p>Una de las festividades más importantes de Soracá es la celebración en honor a San Jerónimo, el santo patrono del municipio. Durante esta fiesta, se realizan procesiones, misas, y actividades culturales que incluyen música y danzas tradicionales.</p>
+    
+        <h2>Danza del Torbellino</h2>
+        <p>El torbellino es una danza tradicional de Boyacá que se caracteriza por sus movimientos rápidos y su música alegre. En Soracá, esta danza se realiza en festividades y es una expresión importante de la identidad cultural de la región.</p>
+
+
+        <h2>Artesanías Locales</h2>
+        <p>La elaboración de artesanías es una tradición en Soracá. Los habitantes elaboran piezas únicas como tejidos, cerámicas y sombreros. Estas artesanías reflejan el talento y la creatividad de los artesanos locales.</p>
+    
+
+        <h2>Gastronomía Típica</h2>
+        <p>En Soracá, se puede disfrutar de platos tradicionales de Boyacá, como la arepa boyacense, el cocido boyacense, y el masato. Estos platos son elaborados con ingredientes locales y representan la riqueza gastronómica de la región.</p>
+  
+   
+        <h2>Celebración de Semana Santa</h2>
+        <p>La Semana Santa en Soracá es un evento significativo en el cual se llevan a cabo procesiones y ceremonias religiosas. Los habitantes participan en las actividades con devoción y respeto, manteniendo vivas las tradiciones religiosas.</p>
+ </section>   
+
+        <section id="clima">
+            <h2>Clima</h2>
+            <h2>Descripción General</h2>
+        <p>Soracá cuenta con un clima templado y fresco debido a su ubicación en la región andina de Colombia. Las temperaturas suelen oscilar entre los 10°C y 18°C, lo que ofrece un ambiente agradable durante todo el año.</p>
+    
+
+        <h2>Estaciones y Variaciones Climáticas</h2>
+        <p>A lo largo del año, Soracá experimenta dos temporadas principales:</p>
+        <ul>
+            <li><strong>Temporada Seca</strong> (de diciembre a marzo): Días soleados y noches frescas. Es la mejor época para actividades al aire libre.</li>
+            <li><strong>Temporada de Lluvias</strong> (de abril a noviembre): Llueve con mayor frecuencia, especialmente en abril, mayo, octubre y noviembre. Las temperaturas pueden bajar debido a la humedad.</li>
+        </ul>
+
+        <h2>Recomendaciones para los Visitantes</h2>
+        <ul>
+            <li>Lleva ropa en capas para adaptarte a las variaciones de temperatura durante el día y la noche.</li>
+            <li>Si visitas durante la temporada de lluvias, lleva impermeables y calzado adecuado.</li>
+            <li>Protección solar, gorra y bloqueador son recomendados durante la temporada seca.</li>
+        </ul>
+    </section>     
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <h2>Artesanías en Tejido</h2>
+        <p>Las artesanías de Soracá incluyen tejidos en lana y algodón, como bufandas, guantes y sombreros, que reflejan el talento artesanal de la región.</p>
+
+
+    
+        <h2>Cerámica Artesanal</h2>
+        <p>La cerámica es otro producto característico de Soracá. Los artesanos crean hermosas piezas decorativas y utilitarias, como platos, vasijas y floreros, hechos a mano con técnicas tradicionales.</p>
+  
+
+
+        <h2>Agricultura Local</h2>
+        <p>Soracá produce diversos productos agrícolas, como papa, maíz y habas, aprovechando sus tierras fértiles y clima ideal para estos cultivos.</p>
+ 
+
+        <h2>Lácteos y Derivados</h2>
+        <p>En Soracá también se producen productos lácteos, como quesos y yogures artesanales, elaborados con leche de la región, conocidos por su sabor y calidad.</p>
+    
+
+        <h2>Miel y Productos Apícolas</h2>
+        <p>La producción de miel es otra actividad destacada en Soracá, donde se elaboran productos apícolas como miel pura y polen, reconocidos por su origen natural y saludable.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Soracá, Boyacá. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
